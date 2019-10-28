@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+  atlas:
+    container_name: atlas
+    build: .
+    command: "/entrypoint.sh"
+    expose:
+      - "21000"
+      - "5005"
+    ports:
+      - "21000:21000"
+      - "5005:5005"
+    environment:
+      - JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+      - MAVEN_HOME=/usr/share/maven
+      - PATH=/root/atlas-bin/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - MANAGE_LOCAL_SOLR=true
+      - MANAGE_LOCAL_HBASE=true
+
