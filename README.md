@@ -1,4 +1,4 @@
-#Apache Atlas dockerized
+# Apache Atlas dockerized
 This image provides a standalone Apache Atlas installation.
 
 ## Supported tags
