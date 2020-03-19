@@ -31,4 +31,5 @@ Run it as `docker-compose up -d` and you'll get your Atlas up&running at http://
 
 ### Useful links
 Official documentation: https://atlas.apache.org
+Apache Atlas source code repository: https://github.com/apache/atlas
 
