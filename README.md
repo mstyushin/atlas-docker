@@ -3,6 +3,7 @@ This image provides a standalone Apache Atlas installation.
 
 ## Supported tags
 * `release-1.1.0-rc2`
+* `release-1.1.0-demo`
 
 ### Sample compose file:
 ```
@@ -11,7 +12,6 @@ services:
   atlas:
     image: mstyushin/atlas:release-1.1.0-rc2
     container_name: atlas
-    build: .
     command: "/entrypoint.sh"
     expose:
       - "21000"
